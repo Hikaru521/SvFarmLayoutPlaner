@@ -6,9 +6,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <p>
-      item-names works!
-    </p>
   `,
   styleUrls: ['./item-names.component.css']
 })

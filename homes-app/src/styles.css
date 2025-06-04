@@ -1,1 +1,93 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #000000;
+  color: hwb(0 62% 37%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Project cards minimal styling */
+.project_1_1 {
+  background-color: hwb(0 48% 51%);
+  border: 3px solid lab(100% 0.01 -0.01);
+  color: lab(100% 0.01 -0.01);
+  transition: border-color 0.2s ease;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-bottom: 2.5%;
+  min-width: 10px;
+  max-width: 350px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+.project_1_2 {
+  background-color: hwb(0 48% 51%);
+  border: 3px solid lab(100% 0.01 -0.01);
+  color: lab(100% 0.01 -0.01);
+  transition: border-color 0.2s ease;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-bottom: 2.5%;
+  min-width: 10px;
+  max-width: 270px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  margin-left: 1470px;
+}
+
+.project_1_3 {
+  background-color: hwb(0 48% 51%);
+  border: 3px solid lab(100% 0.01 -0.01);
+  color: lab(100% 0.01 -0.01);
+  transition: border-color 0.2s ease;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-bottom: 2.5%;
+  min-width: 10px;
+  max-width: 800px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+.project_1_4 {
+  background-color: hwb(0 48% 51%);
+  border: 3px solid lab(100% 0.01 -0.01);
+  color: lab(100% 0.01 -0.01);
+  transition: border-color 0.2s ease;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-bottom: 2.5%;
+  min-width: 10px;
+  max-width: 500px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  margin-left: 1250px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .mobile-text-sm {
+    font-size: 0.875rem;
+  }
+  
+  .mobile-spacing {
+    padding: 3rem 0;
+  }
+}

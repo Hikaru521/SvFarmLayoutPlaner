@@ -9,8 +9,6 @@ import { ItemNamesComponent } from '../item-names/item-names.component';
   template: `
        <section>
       <form>
-        <input type="text" placeholder="Filter by item">
-        <button class="primary" type="button">Search</button>
       </form>
     </section>
     <section class="results">
