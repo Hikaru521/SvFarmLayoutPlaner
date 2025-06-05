@@ -4,6 +4,134 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
   font-weight: 300;
+  scroll-behavior: smooth;
+  padding-top: 25px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.Home_screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  transform: scale(1.3);
+}
+
+.name_card {
+  color: aliceblue;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 9999px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.IITT {
+  font: light ;
+  color: hwb(0 62% 37%);
+}
+
+.erdeklodesi_kor {
+  font: light ;
+  color: lab(0% 0 0);
+}
+
+.big_name_card {
+  font: light ;
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.HeadButtons {
+  scroll-behavior: smooth;
+  display: flex;
+  gap: 1.5rem;
+  margin: 100px;
+}
+
+.HeadButtons a {
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.HeadButtons a:hover {
+  color: #ccc;
+}
+
+.fejlec {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background-color: #000000;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+[id^="celpont_"] {
+  scroll-margin-top: 70px;
+}
+
+.HR_1 {
+  background-color: hwb(0 58% 42%);
+}
+
+.HR_2 {
+  background-color: hwb(0 58% 42%);
+}
+
+.HR_3 {
+  background-color: hwb(0 58% 42%);
+}
+
+.hr {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: hsl(256, 100%, 50%);
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+#home {
+  scroll-margin-top: 120px;
+}
+
+#rolam {
+  scroll-margin-top: 120px;
+}
+
+#ismereteim {
+  scroll-margin-top: 120px;
+}
+
+#projects {
+  scroll-margin-top: 120px;
 }
 
 h1, h2, h3, h4, h5, h6 {

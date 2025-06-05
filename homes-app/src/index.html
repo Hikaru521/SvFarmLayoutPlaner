@@ -8,36 +8,55 @@
 </head>
 
 <body>
-  <div className="flex-shrink-0">
-    <h1 className="text-xl font-medium text-white">Bácsi Péter</h1>
+  <div class="fejlec">
+    <div class="name">
+      <h1 class="big_name_card">Bácsi Péter</h1>
+    </div>
+    <div class="HeadButtons">
+      <a href="#home">Home</a>
+      <a href="#rolam">Rólam</a>
+      <a href="#ismereteim">Ismereteim</a>
+      <a href="#projects">Projects</a>
+    </div>
+    <hr class="hr">
   </div>
-  <h2 className="text-xl md:text-2xl font-light mb-8 text-gray-400">
-    Ipari Informatikai Technikus Tanuló
-  </h2>
-  <p className="text-lg mb-12 max-w-2xl mx-auto text-gray-500 font-light">
-    Alapvető programozás és PLC programozás
-  </p>
-
-  <div className="order-2 lg:order-1">
-  <h2 className="text-3xl font-light text-white mb-8">Rólam</h2>
-  <p className="text-gray-400 mb-6 font-light leading-relaxed">
-    4 éves tanulmányaim során egyértelműen a leghatékonyabban és legsszívesebben a programozásban mélyültem el.
-    Például részt vettem már egy vállalkozás weboldalának fejlesztésében is, de programoztam már saját mini játékot is!
-    Kreatív gondolkodásmódomat hasznosítottam már a PLC programozásban is, például egy működő autó műszerfalát, váltási mechanizmusát,
-    Km/h óráját, Fordulatszámmérő óráját és egy fokozatmutató kijelzőt is megcsináltam mind 1 PLC és 1 HMI segítségével.
-  </p>
-  <p className="text-gray-400 mb-8 font-light leading-relaxed">
-    Terveim szerint tanulmányaimat a Győri Széchenyi egyetemen fogom folytatni ahol Mérnökinformatikus-nak fogok készülni.
-  </p>
+  
+  <div style="height: 70px;"></div>
+  <div class="Home_screen" id="home">
+    <div class="hero-content">
+      <img src="assets/Sullivan.jpg" alt="Profilkép" class="profile-pic">
+      <h1 class="name_card">Bácsi Péter</h1>
+      <h2 class="IITT">
+        Ipari Informatikai Technikus Tanuló
+      </h2>
+      <p class="erdeklodesi_kor">
+        Alapvető programozás és PLC programozás
+      </p>
+    </div>
   </div>
 
-  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 className="text-3xl font-light text-white mb-12">Ismereteim</h2>
+  <div class="Full_about">
+    <hr class="HR_1"></hr>
+    <h2 class="About" id="rolam">Rólam</h2>
+    <p class="text-gray-400 mb-6 font-light leading-relaxed">
+      4 éves tanulmányaim során egyértelműen a leghatékonyabban és legsszívesebben a programozásban mélyültem el.
+      Például részt vettem már egy vállalkozás weboldalának fejlesztésében is, de programoztam már saját mini játékot is!
+      Kreatív gondolkodásmódomat hasznosítottam már a PLC programozásban is, például egy működő autó műszerfalát, váltási mechanizmusát,
+      Km/h óráját, Fordulatszámmérő óráját és egy fokozatmutató kijelzőt is megcsináltam mind 1 PLC és 1 HMI segítségével.
+    </p>
+    <p class="text-gray-400 mb-8 font-light leading-relaxed">
+      Terveim szerint tanulmányaimat a Győri Széchenyi egyetemen fogom folytatni ahol Mérnökinformatikus-nak fogok készülni.
+    </p>
+  </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div className="bg-gray-950 border border-gray-800 p-8">
-        <h3 className="text-lg font-light text-white mb-6">Programozás</h3>
-          <div className="flex justify-between items-center mb-2">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <hr class="HR_2"></hr>
+    <h2 class="text-3xl font-light text-white mb-12" id="ismereteim">Ismereteim</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-gray-950 border border-gray-800 p-8">
+        <h3 class="text-lg font-light text-white mb-6">Programozás</h3>
+          <div class="flex justify-between items-center mb-2">
             <p>
               - Python
             </p>
@@ -49,9 +68,9 @@
             </p>
           </div>
     
-          <div className="bg-gray-950 border border-gray-800 p-8">
-            <h3 className="text-lg font-light text-white mb-6">PLC</h3>
-                <div className="flex justify-between items-center mb-2">
+          <div class="bg-gray-950 border border-gray-800 p-8">
+            <h3 class="text-lg font-light text-white mb-6">PLC</h3>
+                <div class="flex justify-between items-center mb-2">
                   <p>
                     - Tia Portal
                   </p>
@@ -64,70 +83,72 @@
     </div>
   </div>
 
-  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 className="text-3xl font-light text-white mb-12">Projects</h2>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="celpont_4"></div>
+    <hr class="HR_3"></hr>
+    <h2 class="text-3xl font-light text-white mb-12" id="projects">Projects</h2>
       <div class="project_1_1">
-        <h3 className="text-lg font-light text-white mb-2">Console Game</h3>
-        <div className="w-full h-32 bg-gray-900 border border-gray-800 mb-6 flex items-center justify-center">
-          <span className="text-gray-600 text-sm">*Project Image*</span>
+        <h3 class="text-lg font-light text-white mb-2">Console Game</h3>
+        <div class="w-full h-32 bg-gray-900 border border-gray-800 mb-6 flex items-center justify-center">
+          <span class="text-gray-600 text-sm">*Project Image*</span>
         </div>
-        <p className="text-gray-400 mb-4 font-light text-sm leading-relaxed">
+        <p class="text-gray-400 mb-4 font-light text-sm leading-relaxed">
           Egy konzolban játszható egyszerű mini rpg játék
         </p>
-        <div className="flex flex-wrap gap-2 mb-4">
-          <span className="bg-gray-900 text-gray-300 px-2 py-1 text-xs border border-gray-800">Python</span>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-gray-900 text-gray-300 px-2 py-1 text-xs border border-gray-800">Python</span>
         </div>
         <div class="flex space-x-4 text-sm">
-          <a href="https://github.com/Hikaru521/Game2.0" className="text-gray-400 hover:text-white border-b border-gray-800">Code</a>
+          <a href="https://github.com/Hikaru521/Game2.0" class="text-gray-400 hover:text-white border-b border-gray-800">Code</a>
         </div>
       </div>
 
 
       <div class="project_1_2">
-        <h3 className="text-lg font-light text-white mb-2">Kő/Papír/Olló</h3>
-        <div className="w-full h-32 bg-gray-900 border border-gray-800 mb-6 flex items-center justify-center">
-          <span className="text-gray-600 text-sm">*Project Image*</span>
+        <h3 class="text-lg font-light text-white mb-2">Kő/Papír/Olló</h3>
+        <div class="w-full h-32 bg-gray-900 border border-gray-800 mb-6 flex items-center justify-center">
+          <span class="text-gray-600 text-sm">*Project Image*</span>
         </div>
-        <p className="text-gray-400 mb-4 font-light text-sm leading-relaxed">
+        <p class="text-gray-400 mb-4 font-light text-sm leading-relaxed">
           Egy egyszerű kő papír olló játék Gui-val
         </p>
-        <div className="flex flex-wrap gap-2 mb-4">
-          <span className="bg-gray-900 text-gray-300 px-2 py-1 text-xs border border-gray-800">Python</span>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-gray-900 text-gray-300 px-2 py-1 text-xs border border-gray-800">Python</span>
         </div>
-        <div className="flex space-x-4 text-sm">
-          <a href="https://github.com/Hikaru521/kopapirollo" className="text-gray-400 hover:text-white border-b border-gray-800">Code</a>
+        <div class="flex space-x-4 text-sm">
+          <a href="https://github.com/Hikaru521/kopapirollo" class="text-gray-400 hover:text-white border-b border-gray-800">Code</a>
         </div>
       </div>
 
       <div class="project_1_3">
-        <h3 className="text-lg font-light text-white mb-2">Valorant Agent Picker</h3>
-        <div className="w-full h-32 bg-gray-900 border border-gray-800 mb-6 flex items-center justify-center">
-          <span className="text-gray-600 text-sm">*Project Image*</span>
+        <h3 class="text-lg font-light text-white mb-2">Valorant Agent Picker</h3>
+        <div class="w-full h-32 bg-gray-900 border border-gray-800 mb-6 flex items-center justify-center">
+          <span class="text-gray-600 text-sm">*Project Image*</span>
         </div>
-        <p className="text-gray-400 mb-4 font-light text-sm leading-relaxed">
+        <p class="text-gray-400 mb-4 font-light text-sm leading-relaxed">
           Valoranthoz készített agent választó ami a töltőképernyőn elindítva és a karaktert kiválasztva két pozíció között ugrálva választja ki a karakter milimásodperceken bellüül a betöltés után
         </p>
-        <div className="flex flex-wrap gap-2 mb-4">
-          <span className="bg-gray-900 text-gray-300 px-2 py-1 text-xs border border-gray-800">Python</span>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-gray-900 text-gray-300 px-2 py-1 text-xs border border-gray-800">Python</span>
         </div>
-        <div className="flex space-x-4 text-sm">
-          <a href="https://github.com/Hikaru521/ValorantAgentPicker" className="text-gray-400 hover:text-white border-b border-gray-800">Code</a>
+        <div class="flex space-x-4 text-sm">
+          <a href="https://github.com/Hikaru521/ValorantAgentPicker" class="text-gray-400 hover:text-white border-b border-gray-800">Code</a>
         </div>
       </div>
 
       <div class="project_1_4">
-        <h3 className="text-lg font-light text-white mb-2">Pokemon Codex</h3>
-        <div className="w-full h-32 bg-gray-900 border border-gray-800 mb-6 flex items-center justify-center">
-          <span className="text-gray-600 text-sm">*Project Image*</span>
+        <h3 class="text-lg font-light text-white mb-2">Pokemon Codex</h3>
+        <div class="w-full h-32 bg-gray-900 border border-gray-800 mb-6 flex items-center justify-center">
+          <span class="text-gray-600 text-sm">*Project Image*</span>
         </div>
-        <p className="text-gray-400 mb-4 font-light text-sm leading-relaxed">
+        <p class="text-gray-400 mb-4 font-light text-sm leading-relaxed">
           A program egy pokemon Api-t használva információt nyer ki a pokemon számának megadásával
         </p>
-        <div className="flex flex-wrap gap-2 mb-4">
-          <span className="bg-gray-900 text-gray-300 px-2 py-1 text-xs border border-gray-800">Python</span>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-gray-900 text-gray-300 px-2 py-1 text-xs border border-gray-800">Python</span>
         </div>
-        <div className="flex space-x-4 text-sm">
-          <a href="https://github.com/Hikaru521/pokemon_codex" className="text-gray-400 hover:text-white border-b border-gray-800">Code</a>
+        <div class="flex space-x-4 text-sm">
+          <a href="https://github.com/Hikaru521/pokemon_codex" class="text-gray-400 hover:text-white border-b border-gray-800">Code</a>
         </div>
       </div>
   </div>
