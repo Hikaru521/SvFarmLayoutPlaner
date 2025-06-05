@@ -96,14 +96,20 @@ html {
 
 .HR_1 {
   background-color: hwb(0 58% 42%);
+  height: 1px;
+  border: none;
 }
 
 .HR_2 {
   background-color: hwb(0 58% 42%);
+  height: 1px;
+  border: none;
 }
 
 .HR_3 {
   background-color: hwb(0 58% 42%);
+  height: 1px;
+  border: none;
 }
 
 .hr {
@@ -124,10 +130,88 @@ html {
 
 #rolam {
   scroll-margin-top: 120px;
+  padding: 0 1rem;
+}
+
+.Full_about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  height: 100vh;
+}
+
+.Full_about h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.Full_about p {
+  max-width: 800px;
+  color: #ccc;
+  font-weight: 300;
+  line-height: 1.8;
 }
 
 #ismereteim {
-  scroll-margin-top: 120px;
+  scroll-margin-top: 1px;
+}
+
+.Full_knowledge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.knowledge-boxes {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.knowledge-card {
+  background-color: rgb(28, 0, 104);
+  border: 3px solid lab(100% 0.01 -0.01);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  max-width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.knowledge-card:hover {
+  transform: scale(1.05);
+}
+
+.knowledge-card h3 {
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.knowledge-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.knowledge-card li {
+  margin: 0.5rem 0;
+  color: lab(75.88% 0 -0.01);
 }
 
 #projects {
@@ -150,63 +234,83 @@ a {
   transition: color 0.2s ease;
 }
 
-/* Project cards minimal styling */
-.project_1_1 {
-  background-color: hwb(0 48% 51%);
-  border: 3px solid lab(100% 0.01 -0.01);
-  color: lab(100% 0.01 -0.01);
-  transition: border-color 0.2s ease;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  padding-bottom: 2.5%;
-  min-width: 10px;
-  max-width: 350px;
-  border-radius: 15px;
-  margin-bottom: 50px;
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  text-align: center;
 }
 
-.project_1_2 {
-  background-color: hwb(0 48% 51%);
-  border: 3px solid lab(100% 0.01 -0.01);
-  color: lab(100% 0.01 -0.01);
-  transition: border-color 0.2s ease;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  padding-bottom: 2.5%;
-  min-width: 10px;
-  max-width: 270px;
-  border-radius: 15px;
-  margin-bottom: 50px;
-  margin-left: 1470px;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  justify-items: center;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
 }
 
-.project_1_3 {
-  background-color: hwb(0 48% 51%);
+.project-card {
+  background-color: rgb(28, 0, 104);
   border: 3px solid lab(100% 0.01 -0.01);
   color: lab(100% 0.01 -0.01);
   transition: border-color 0.2s ease;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  padding-bottom: 2.5%;
-  min-width: 10px;
-  max-width: 800px;
+  padding: 2rem;
   border-radius: 15px;
-  margin-bottom: 50px;
-}
-
-.project_1_4 {
-  background-color: hwb(0 48% 51%);
-  border: 3px solid lab(100% 0.01 -0.01);
-  color: lab(100% 0.01 -0.01);
-  transition: border-color 0.2s ease;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  padding-bottom: 2.5%;
-  min-width: 10px;
   max-width: 500px;
+  width: 100%;
+}
+
+.project-card-pokemon-codex {
+  background-color: rgb(28, 0, 104);
+  border: 3px solid lab(100% 0.01 -0.01);
+  color: lab(100% 0.01 -0.01);
+  transition: border-color 0.2s ease;
+  padding: 2rem;
   border-radius: 15px;
-  margin-bottom: 50px;
-  margin-left: 1250px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 475px;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  color: #ccc;
+  font-weight: 300;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.project-tags span {
+  background-color: #111;
+  color: #ddd;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-right: 0.3rem;
+}
+
+.project-links a {
+  margin-top: 20px;
+  color: #aaa;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #333;
+}
+
+.project-links a:hover {
+  color: white;
+  border-color: white;
 }
 
 /* Mobile responsiveness */

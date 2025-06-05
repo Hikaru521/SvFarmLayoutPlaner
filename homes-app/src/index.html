@@ -35,9 +35,9 @@
     </div>
   </div>
 
-  <div class="Full_about">
-    <hr class="HR_1"></hr>
-    <h2 class="About" id="rolam">Rólam</h2>
+  <hr class="HR_1"></hr>
+  <div class="Full_about" id="rolam">
+    <h2 class="About">Rólam</h2>
     <p class="text-gray-400 mb-6 font-light leading-relaxed">
       4 éves tanulmányaim során egyértelműen a leghatékonyabban és legsszívesebben a programozásban mélyültem el.
       Például részt vettem már egy vállalkozás weboldalának fejlesztésében is, de programoztam már saját mini játékot is!
@@ -49,108 +49,75 @@
     </p>
   </div>
 
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <hr class="HR_2"></hr>
-    <h2 class="text-3xl font-light text-white mb-12" id="ismereteim">Ismereteim</h2>
+<hr class="HR_2"/>
+<section id="ismereteim" class="Full_knowledge">
+  <h2 class="section-title">Ismereteim</h2>
+  <div class="knowledge-boxes">
+    <div class="knowledge-card">
+      <h3>Programozás</h3>
+      <ul>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </div>
+    <div class="knowledge-card">
+      <h3>PLC</h3>
+      <ul>
+        <li>Step7</li>
+        <li>TIA Portal</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-gray-950 border border-gray-800 p-8">
-        <h3 class="text-lg font-light text-white mb-6">Programozás</h3>
-          <div class="flex justify-between items-center mb-2">
-            <p>
-              - Python
-            </p>
-            <p>
-              - Html
-            </p>
-            <p>
-              - CSS
-            </p>
-          </div>
-    
-          <div class="bg-gray-950 border border-gray-800 p-8">
-            <h3 class="text-lg font-light text-white mb-6">PLC</h3>
-                <div class="flex justify-between items-center mb-2">
-                  <p>
-                    - Tia Portal
-                  </p>
-                  <p>
-                    - Step7
-                  </p>
-                </div>
-          </div>
-      </div>
+<hr class="HR_3"/>
+<h2 class="section-title" id="projects">Projects</h2>
+<div class="projects-grid">
+  <div class="project-card">
+    <h3 class="text-lg font-light text-white mb-2">Console Game</h3>
+    <img src="assets/ConsoleGame.png" alt="Console Game" class="project-image">
+    <p class="project-description">Egy konzolban játszható egyszerű mini rpg játék</p>
+    <div class="project-tags"><span>Python</span></div>
+    <div class="project-links">
+      <a href="https://github.com/Hikaru521/Game2.0">Code</a>
     </div>
   </div>
 
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div id="celpont_4"></div>
-    <hr class="HR_3"></hr>
-    <h2 class="text-3xl font-light text-white mb-12" id="projects">Projects</h2>
-      <div class="project_1_1">
-        <h3 class="text-lg font-light text-white mb-2">Console Game</h3>
-        <div class="w-full h-32 bg-gray-900 border border-gray-800 mb-6 flex items-center justify-center">
-          <span class="text-gray-600 text-sm">*Project Image*</span>
-        </div>
-        <p class="text-gray-400 mb-4 font-light text-sm leading-relaxed">
-          Egy konzolban játszható egyszerű mini rpg játék
-        </p>
-        <div class="flex flex-wrap gap-2 mb-4">
-          <span class="bg-gray-900 text-gray-300 px-2 py-1 text-xs border border-gray-800">Python</span>
-        </div>
-        <div class="flex space-x-4 text-sm">
-          <a href="https://github.com/Hikaru521/Game2.0" class="text-gray-400 hover:text-white border-b border-gray-800">Code</a>
-        </div>
-      </div>
-
-
-      <div class="project_1_2">
-        <h3 class="text-lg font-light text-white mb-2">Kő/Papír/Olló</h3>
-        <div class="w-full h-32 bg-gray-900 border border-gray-800 mb-6 flex items-center justify-center">
-          <span class="text-gray-600 text-sm">*Project Image*</span>
-        </div>
-        <p class="text-gray-400 mb-4 font-light text-sm leading-relaxed">
-          Egy egyszerű kő papír olló játék Gui-val
-        </p>
-        <div class="flex flex-wrap gap-2 mb-4">
-          <span class="bg-gray-900 text-gray-300 px-2 py-1 text-xs border border-gray-800">Python</span>
-        </div>
-        <div class="flex space-x-4 text-sm">
-          <a href="https://github.com/Hikaru521/kopapirollo" class="text-gray-400 hover:text-white border-b border-gray-800">Code</a>
-        </div>
-      </div>
-
-      <div class="project_1_3">
-        <h3 class="text-lg font-light text-white mb-2">Valorant Agent Picker</h3>
-        <div class="w-full h-32 bg-gray-900 border border-gray-800 mb-6 flex items-center justify-center">
-          <span class="text-gray-600 text-sm">*Project Image*</span>
-        </div>
-        <p class="text-gray-400 mb-4 font-light text-sm leading-relaxed">
-          Valoranthoz készített agent választó ami a töltőképernyőn elindítva és a karaktert kiválasztva két pozíció között ugrálva választja ki a karakter milimásodperceken bellüül a betöltés után
-        </p>
-        <div class="flex flex-wrap gap-2 mb-4">
-          <span class="bg-gray-900 text-gray-300 px-2 py-1 text-xs border border-gray-800">Python</span>
-        </div>
-        <div class="flex space-x-4 text-sm">
-          <a href="https://github.com/Hikaru521/ValorantAgentPicker" class="text-gray-400 hover:text-white border-b border-gray-800">Code</a>
-        </div>
-      </div>
-
-      <div class="project_1_4">
-        <h3 class="text-lg font-light text-white mb-2">Pokemon Codex</h3>
-        <div class="w-full h-32 bg-gray-900 border border-gray-800 mb-6 flex items-center justify-center">
-          <span class="text-gray-600 text-sm">*Project Image*</span>
-        </div>
-        <p class="text-gray-400 mb-4 font-light text-sm leading-relaxed">
-          A program egy pokemon Api-t használva információt nyer ki a pokemon számának megadásával
-        </p>
-        <div class="flex flex-wrap gap-2 mb-4">
-          <span class="bg-gray-900 text-gray-300 px-2 py-1 text-xs border border-gray-800">Python</span>
-        </div>
-        <div class="flex space-x-4 text-sm">
-          <a href="https://github.com/Hikaru521/pokemon_codex" class="text-gray-400 hover:text-white border-b border-gray-800">Code</a>
-        </div>
-      </div>
+  <div class="project-card">
+    <h3 class="text-lg font-light text-white mb-2">Kő/Papír/Olló</h3>
+    <img src="assets/KoPapirOllo.png" alt="Kő/Papír/Olló" class="project-image">
+    <p class="project-description">Egy egyszerű kő papír olló játék Gui-val</p>
+    <div class="project-tags"><span>Python</span></div>
+    <div class="project-links">
+      <a href="https://github.com/Hikaru521/kopapirollo">Code</a>
+    </div>
   </div>
-</body>
-</html>
+
+  <div class="project-card">
+    <h3 class="text-lg font-light text-white mb-2">Valorant Agent Picker</h3>
+    <img src="assets/ValorantAgentPicker.png" alt="ValorantAgentPicker" class="project-image">
+    <p class="project-description">
+      Agent választó program Valorant játékhoz, karakter kiválasztás automatizálására.
+    </p>
+    <div class="project-tags"><span>Python</span></div>
+    <div class="project-links">
+      <a href="https://github.com/Hikaru521/ValorantAgentPicker">Code</a>
+    </div>
+  </div>
+
+  <div class="project-card-pokemon-codex">
+    <h3 class="text-lg font-light text-white mb-2">Pokemon Codex</h3>
+    <img src="assets/PokemonCodex.png" alt="ValorantAgentPicker" class="project-image">
+    <p class="project-description">Pokemon API használatával lekérdezett adatok</p>
+    <div class="project-tags"><span>Python</span></div>
+    <div class="project-links">
+      <a href="https://github.com/Hikaru521/pokemon_codex">Code</a>
+    </div>
+  </div>
+</div>
+
+<!--       _
+       .__(.)<
+        \___)   
+ ~~~~~~~~~~~~~~~~~~-->
